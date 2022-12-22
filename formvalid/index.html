@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="ass.css">
+    <title>FormValidation</title>
+</head>
+
+
+<body>
+    
+    <div class="page">
+        <form class="js-form" action="" novalidate >
+            <h1 class="text">Отдел мошенничества</h1>
+            <div class="form__group">
+                <input type="text" class="input js-input" name="name" placeholder="Имя"  >
+            </div>
+            <div class="form__group">
+                <input type="text" class="input js-input" name="last name" placeholder="Фамилия"  >
+            </div>
+            <div class="form__group">
+                <input type="email" class="input js-input js-input-email" name="email" placeholder="Ваше мыло"  >
+            </div>
+            <div class="form__group">
+                <input type="password" class="input js-input js-input-passwd1" name="passwd1" placeholder="Пароль" >
+            </div>
+
+            <div class="form__group">
+                <input type="password" class="input js-input js-input-passwd2" name="passwd2" placeholder="Повторите пароль" >
+            </div>
+
+            <div class="form__group d-flex">
+                <div class="form__group">
+                    <label class="radio__label" for="privacy_check">Мужской</label>
+                    <input type="radio" class="radio__input js-input-gender" name="gender" id="privacy_check">
+                </div>
+                <div class="form__group">
+                    <label class="radio__label" for="privacy_check">Женский</label>
+                    <input type="radio" class="radio__input js-input-gender" name="gender" id="privacy_check">
+                </div>
+            </div>
+
+            <div class="form__group">
+                <label for="opt">Оценка еды в Черчилле по 5-бальной</label>
+                <select name="opt" id="opt">
+                    <option selected>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+            </div>
+
+            <div class="form__group d-flex">
+                <div class="form__group" style="justify-content: flex-start">
+                    <label for="subscribe" style="margin-right: 30px">Получить спам-рассылку</label>
+                    <input type="checkbox" name="subscribe" id="subscribe">
+                </div>
+            </div>
+            <button class="btn" type="submit">
+                Отправить
+            </button>
+        </form>
+    </div>
+    <script src="ass.js"></script>
+</body>
+</html>

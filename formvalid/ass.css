@@ -1,0 +1,97 @@
+*,*:before,*:after {
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  background-color: rgb(222, 66, 170);
+}
+
+.text{
+  font-size: 35px;
+  height: 45px;
+  text-align: center;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.d-flex .form__group {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.d-flex .form__group label{
+  display: flex;
+  align-items: center;
+}
+
+.page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  
+}
+
+
+form {
+  width: 500px;
+
+}
+
+.form__group {
+  margin-bottom: 15px;
+}
+
+.input, select {
+  width: 100%;
+  height: 35px;
+  padding: 0 10px;
+  border: 1px solid black;
+  outline: 0;
+}
+
+.radio__input{
+  width: 22px;
+  height: 22px;
+}
+
+.radio__label{
+  user-select: none;
+}
+
+.radio__input.error + .radio__label {
+  color: rgb(191, 255, 0);
+}
+
+.input.error {
+  border-color: rgb(21, 0, 255);
+}
+
+.input::placeholder {
+  color: rgb(21, 20, 20);
+}
+
+.input:focus{
+  background-color: rgb(240, 111, 218);
+}
+
+
+.btn {
+  height: 30px;
+  padding: 10px 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(18, 140, 180);
+  border: 0;
+  width: 100%;
+  outline: 0;
+  cursor: pointer;
+  color: #fff;
+}
